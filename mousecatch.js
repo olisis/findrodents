@@ -1,8 +1,3 @@
-/*numberOfMice = 4;
-numberOfRats = 3;
-numberOfRabbits = 2;
-numberOfHares = 1;*/
-
 allowDrop = function allowDrop(ev) {
   ev.preventDefault();
 }
