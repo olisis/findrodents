@@ -73,36 +73,6 @@ console.log(data, data.startsWith('hareDrag'));
       rodentToDrop.pos = Number(ev.target.id);
       console.log(rodentToDrop, rodentToDrop.pos);
       rodentToDrop.draw();
-
-
-    //var td_whereToDrop = document.getElementById(ev.target.id);
-
-
-//console.log(ev.dataTransfer);
-  /*ev.preventDefault();
-  console.log("drop event", ev.target.id);
-
- var data = ev.dataTransfer.getData("text");
- var td_toDrop = document.getElementById(ev.target.id);
-
- if (data == "mouseDrag") {rodSpan = 1};
- if (data == "ratDrag") {rodSpan = 2};
- if (data == "rabbitDrag") {rodSpan = 3};
- if (data == "hareDrag") {rodSpan = 4};
-
- td_toDrop.setAttribute("colspan", Number(rodSpan));
- td_toDrop.setAttribute("align", "center");
-
-         console.log("rodSpan", rodSpan);
-  ev.target.appendChild(document.getElementById(data));
-  console.log("target id", ev.target.id);
-  console.log("colspan", rodSpan);
-   for (var i2=ev.target.id; i2 < (ev.target.id+Number(rodSpan)); i2++) {
-   console.log(ev.target.id);
-   console.log(i2, typeof(i2));
-                e2 = document.getElementById(i2);
-                e2.remove();
-           }*/
 }
 
 
@@ -110,9 +80,6 @@ var nClicks = 0;
 var nRdts = 0;
 
 var winH = this.innerHeight-85;
-//var winHStr = `height: ${winH}px;`
-//console.log(winH);
-/*var brd = document.getElementById("board");
 var mouse_video = document.getElementById("mouse_video");*/
 
 
@@ -132,9 +99,6 @@ for (var i=0; i < 10; i++) {
   rowName = row.appendChild(rowN);
   rowName.innerHTML = i;
   rowName.classList.add('rowNames');
-
-  /*colName = row.appendChild(colN);
-  colName.innerHTML = i;*/
 
   for (var j=0; j < 10; j++) {
       dat = document.createElement('td');
@@ -160,10 +124,6 @@ function rodent(name, len, pic, snd, sidepic)  {
     this.snd = snd;
     this.sidepic = sidepic;
     this.pos = randomPos(this);
-
-/*dec = Math.floor(Math.random()*10)*10;
-    single = Math.floor(Math.random()*(10-len+1));
-    this.pos = dec+single;*/
 
     console.log("rodent at:", this.pos);
 
