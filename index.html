@@ -15,7 +15,7 @@
         }
         audio {
             height: 20px;
-            width: 100px;
+            width: 200px;
             display: block;
             align: center;
         }
@@ -23,7 +23,7 @@
             display: block;
             margin-left: auto;
             margin-right: auto;
-            width: 100%;
+            width: 90%;
         }
         img, audio {
             display: block;
@@ -31,6 +31,49 @@
             margin-right: auto;
             margin-top: 20px;
         }
+        #tbl {
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+            border: black;
+        }
+        th {
+            font-size: xx-large;
+            border: transparent;
+            font-weight: normal;
+        }
+@keyframes shit {
+from {height: 0px; width: 0px;}
+to {height: 200px; width: 200px;}
+}
+
+
+
+.shit {
+width: 0px;
+height: 0px;
+animation-name: shit;
+animation-duration: 4s;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+}
+
+
+@keyframes example {
+from {height: 0px; width: 0px;}
+to {height: 200px; width: 200px;}
+}
+
+
+
+#anim {
+width: 0px;
+height: 0px;
+animation-name: example;
+animation-duration: 4s;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+}
     </style>
 </head>
 <body>
@@ -67,6 +110,34 @@
 <audio id="hare_sound" controls>
     <source src="hare.mp3" type="audio/mpeg">
 </audio>
+
+<div >
+<table  id="tbl"  border="1" BORDERCOLOR="white">
+    <tr><
+        <th></th>
+        <th>0</th>
+        <th>1</th>
+    </tr>
+    <tr>
+        <td style="font-size: xx-large; border: transparent; padding: 10px">0</td>
+        <td>
+            <img id="anim" src="mouse-transparent.png" height="200" width="200"</img>
+        </td>
+        <td>
+            <img  src="Mouse_Poop.png" height="200" width="200" style="background-color:transparent;  padding:0px;">
+        </td>
+    </tr>
+    <tr>
+        <td style="font-size: xx-large; border: transparent; padding: 10px">1</td>
+        <td>
+            <img  src="Mouse_Poop.png" height="200" width="200" style="background-color:transparent;  padding:0px;">
+        </td>
+        <td>
+            <img class="shit" src="Mouse_Poop.png" height="200" width="200" style="background-color:transparent;  padding:0px;">
+        </td>
+    </tr>
+</table>
+</div>
 
 
 </body>
