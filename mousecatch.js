@@ -1,3 +1,4 @@
+console.log("Script is called");
 allowDrop = function allowDrop(ev) {
   ev.preventDefault();
 }
